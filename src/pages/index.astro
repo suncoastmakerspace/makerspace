@@ -5,29 +5,39 @@ import ProjectCard from '../components/ProjectCard.astro';
 
 <MainLayout title="Home">
     <!-- TEMP QUOTES AND WHATNOT (idk man) -->
-    <section class="relative bg-linear-to-br from-indigo-600 via-purple-600 to-indigo-800 text-white py-20 md:py-32">
+    <section class="relative bg-linear-to-br from-indigo-600 via-purple-600 to-indigo-800 text-white py-18 md:py-26">
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
             <div class="text-center">
+
                 <h1 class="text-4xl md:text-6xl font-bold mb-6">
                     Build. Create. Innovate.
                 </h1>
+
                 <p class="text-xl md:text-2xl mb-8 text-indigo-100 max-w-3xl mx-auto">
                     Where ideas come to life through electronics, robotics, and hands-on engineering.
                 </p>
+
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="/projects" class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-indigo-50 transition-colors">
+
+                    <a href="/projects" class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-indigo-50 transition-colors relative z-10">
                         View Our Projects
                     </a>
-                    <a href="/contact" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-600 transition-colors">
+
+                    <a href="/contact" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-600 transition-colors relative z-10">
                         Contact Us
                     </a>
+
                 </div>
+
             </div>
+
         </div>
         
         <!-- Wavy thing I lowkey copied off of a website -->
         <div class="absolute bottom-0 left-0 right-0">
-            <svg viewBox="0 0 1438 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 1435 120" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="white"/>
             </svg>
         </div>
@@ -35,23 +45,34 @@ import ProjectCard from '../components/ProjectCard.astro';
 
     <!-- TEMP(?) WHAT WE DO SECTION -->
     <section class="py-16 bg-white">
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">What We Do</h2>
+
+            <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">
+                We focus on hands-on learning through real projects and collaborative builds.
+            </p>
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
                 <!-- Card 1 -->
-                <div class="text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+                <div class="text-center md:text-left p-6 rounded-lg hover:shadow-lg transition-shadow">
+
                     <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
                         <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
                         </svg>
                     </div>
+
                     <h3 class="text-xl font-semibold mb-2 text-gray-900">Electronics</h3>
                     <p class="text-gray-600">Design and build circuits, from simple LEDs to complex microcontroller projects.</p>
+
                 </div>
 
                 <!-- Card 2 -->
-                <div class="text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+                <div class="text-center md:text-left p-6 rounded-lg hover:shadow-lg transition-shadow">
+
                     <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                         <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
@@ -62,7 +83,8 @@ import ProjectCard from '../components/ProjectCard.astro';
                 </div>
 
                 <!-- Card 3 -->
-                <div class="text-center p-6 rounded-lg hover:shadow-lg transition-shadow">
+                <div class="text-center md:text-left p-6 rounded-lg hover:shadow-lg transition-shadow">
+
                     <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
                         <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
@@ -80,7 +102,10 @@ import ProjectCard from '../components/ProjectCard.astro';
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
-                <p class="text-gray-600 text-lg">Check out some of our recent builds</p>
+
+                <p class="text-gray-600 text-lg">
+                    A few examples of what we’re building and experimenting with
+                </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -114,14 +139,25 @@ import ProjectCard from '../components/ProjectCard.astro';
         </div>
     </section>
 
-    <!-- Please change this, this is so conrny :sob: -->
+    <!-- Please change this, this is so corny :sob: -->
     <section class="py-16 bg-linear-to-r from-indigo-600 to-purple-600 text-white">
+
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Curious About Us?</h2>
-            <p class="text-xl mb-8 text-indigo-100">Learn what Makerspace is, and what we do!</p>
+
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                New here?
+            </h2>
+
+            <p class="text-xl mb-8 text-indigo-100">
+                Learn how Makerspace works and how to get involved.
+            </p>
+
             <a href="/about" class="inline-block bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-indigo-50 transition-colors">
                 About Us
             </a>
+
         </div>
+
     </section>
+
 </MainLayout>

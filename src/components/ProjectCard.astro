@@ -35,9 +35,10 @@ const gradients = {
 const gradientClass = gradients[gradient];
 ---
 
-<div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+<div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all">
     <div class={`h-48 ${gradientClass} flex items-center justify-center`}>
         <svg class="w-20 h-20 text-white opacity-75" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={icons[icon]} />
         </svg>
     </div>
