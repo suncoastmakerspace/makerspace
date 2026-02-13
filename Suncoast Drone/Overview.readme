@@ -1,6 +1,0 @@
-Hello everybody and welcome!
-
-This is the Suncoast Drone github repository. We will begin work here focusing on the different aspects of the drone, but primarily the computer science part. We're going to need a COMPUTER VISION algorithm for this to identify rust, and the other particularates.
-
-The computer vision algorithm(CVA) we plan on installing outside Mr. Penserga's door is going to be something we'll do as a first version iteration of this, after all it's just a CVA on a drone.
-
