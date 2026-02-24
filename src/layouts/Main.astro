@@ -4,14 +4,17 @@ import Footer from '../components/Footer.astro';
 
 import '../styles/global.css';
 const { title = "Makerspace" } = Astro.props;
+
+const svgPath = new URL('../assets/logo.svg', import.meta.url).href;
+const faviconPath = new URL('../assets/favicon.ico', import.meta.url).href;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/svg+xml" href={svgPath} />
+        <link rel="icon" href={faviconPath} />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
 
