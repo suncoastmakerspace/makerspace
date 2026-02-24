@@ -5,6 +5,7 @@ import svelte from '@astrojs/svelte';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
+  trailingSlash: 'never',
   integrations: [svelte()],
 
   vite: {
@@ -12,4 +13,7 @@ export default defineConfig({
       tailwindcss(),
     ],
   },
+
+  site: 'https://makerspace.github.io',
+  base: '/'
 });
