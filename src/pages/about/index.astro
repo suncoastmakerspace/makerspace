@@ -4,32 +4,8 @@ import MainLayout from "../../layouts/Main.astro";
 
 <MainLayout title="About Us">
 
-    <!-- ═══════════════════════════════════════════
-         HERO — gradient with circuit decoration
-    ════════════════════════════════════════════ -->
     <section class="relative bg-linear-to-br from-indigo-600 via-purple-600 to-indigo-800 text-white py-24 overflow-hidden">
 
-        <!-- Decorative circuit-board SVG (background) -->
-        <svg class="absolute inset-0 w-full h-full opacity-10 pointer-events-none" xmlns="http://www.w3.org/2000/svg">
-            <!-- horizontal traces -->
-            <line x1="0" y1="40"  x2="100%" y2="40"  stroke="white" stroke-width="1"/>
-            <line x1="0" y1="120" x2="100%" y2="120" stroke="white" stroke-width="1"/>
-            <line x1="0" y1="200" x2="100%" y2="200" stroke="white" stroke-width="1"/>
-            <!-- vertical traces -->
-            <line x1="80"  y1="0" x2="80"  y2="100%" stroke="white" stroke-width="1"/>
-            <line x1="220" y1="0" x2="220" y2="100%" stroke="white" stroke-width="1"/>
-            <line x1="400" y1="0" x2="400" y2="100%" stroke="white" stroke-width="1"/>
-            <!-- component pads -->
-            <circle cx="80"  cy="40"  r="5" fill="white"/>
-            <circle cx="220" cy="120" r="5" fill="white"/>
-            <circle cx="400" cy="40"  r="5" fill="white"/>
-            <circle cx="80"  cy="200" r="5" fill="white"/>
-            <!-- resistor symbols -->
-            <rect x="140" y="35" width="40" height="10" rx="2" stroke="white" stroke-width="1.5" fill="none"/>
-            <rect x="300" y="115" width="40" height="10" rx="2" stroke="white" stroke-width="1.5" fill="none"/>
-        </svg>
-
-        <!-- Glowing orb -->
         <div class="absolute -top-24 -right-24 w-96 h-96 bg-purple-500 rounded-full opacity-20 blur-3xl pointer-events-none"></div>
         <div class="absolute -bottom-16 -left-16 w-72 h-72 bg-indigo-400 rounded-full opacity-20 blur-3xl pointer-events-none"></div>
 
@@ -66,10 +42,6 @@ import MainLayout from "../../layouts/Main.astro";
         </div>
     </section>
 
-
-    <!-- ═══════════════════════════════════════════
-         MISSION — colored gradient cards
-    ════════════════════════════════════════════ -->
     <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -84,8 +56,8 @@ import MainLayout from "../../layouts/Main.astro";
 
                 <!-- Card: Learn -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all group">
-                    <div class="h-36 bg-linear-to-br from-blue-400 to-indigo-500 flex items-center justify-center">
-                        <svg class="w-16 h-16 text-white opacity-80 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="h-32 bg-linear-to-br from-blue-400 to-indigo-500 flex items-center justify-center">
+                        <svg class="w-12 h-12 text-white opacity-80 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
                         </svg>
@@ -100,8 +72,8 @@ import MainLayout from "../../layouts/Main.astro";
 
                 <!-- Card: Collaborate -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all group">
-                    <div class="h-36 bg-linear-to-br from-purple-400 to-pink-500 flex items-center justify-center">
-                        <svg class="w-16 h-16 text-white opacity-80 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="h-32 bg-linear-to-br from-purple-400 to-pink-500 flex items-center justify-center">
+                        <svg class="w-12 h-12 text-white opacity-80 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
                         </svg>
@@ -116,8 +88,8 @@ import MainLayout from "../../layouts/Main.astro";
 
                 <!-- Card: Showcase -->
                 <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all group">
-                    <div class="h-36 bg-linear-to-br from-green-400 to-cyan-500 flex items-center justify-center">
-                        <svg class="w-16 h-16 text-white opacity-80 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="h-32 bg-linear-to-br from-green-400 to-cyan-500 flex items-center justify-center">
+                        <svg class="w-12 h-12 text-white opacity-80 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
                         </svg>
@@ -135,9 +107,6 @@ import MainLayout from "../../layouts/Main.astro";
     </section>
 
 
-    <!-- ═══════════════════════════════════════════
-         OUR STORY — two-column with timeline accent
-    ════════════════════════════════════════════ -->
     <section class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -154,9 +123,7 @@ import MainLayout from "../../layouts/Main.astro";
                         </p>
                     </div>
 
-                    <!-- Mini milestones -->
                     <div class="mt-8 space-y-4">
-                        <!-- milestone -->
                         <div class="flex items-start gap-4">
                             <div class="shrink-0 w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center text-white font-bold text-xs">
                                 20XX
@@ -187,12 +154,9 @@ import MainLayout from "../../layouts/Main.astro";
                     </div>
                 </div>
 
-                <!-- Right: decorative "PCB" illustration -->
                 <div class="flex items-center justify-center">
                     <div class="relative w-72 h-72">
-                        <!-- PCB board background -->
                         <div class="absolute inset-0 bg-linear-to-br from-indigo-800 to-purple-900 rounded-2xl shadow-2xl"></div>
-                        <!-- Grid overlay -->
                         <svg class="absolute inset-0 w-full h-full opacity-20" xmlns="http://www.w3.org/2000/svg">
                             <defs>
                                 <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
@@ -201,29 +165,23 @@ import MainLayout from "../../layouts/Main.astro";
                             </defs>
                             <rect width="100%" height="100%" fill="url(#grid)"/>
                         </svg>
-                        <!-- Traces -->
                         <svg class="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
                             <line x1="36"  y1="100" x2="230" y2="100" stroke="#818cf8" stroke-width="3"/>
                             <line x1="230" y1="100" x2="230" y2="180" stroke="#818cf8" stroke-width="3"/>
                             <line x1="60"  y1="200" x2="230" y2="200" stroke="#a78bfa" stroke-width="3"/>
                             <line x1="60"  y1="140" x2="60"  y2="200" stroke="#a78bfa" stroke-width="3"/>
-                            <!-- Pads -->
                             <circle cx="36"  cy="100" r="7" fill="#6366f1"/>
                             <circle cx="230" cy="180" r="7" fill="#6366f1"/>
                             <circle cx="60"  cy="140" r="7" fill="#8b5cf6"/>
-                            <!-- IC component -->
                             <rect x="100" y="115" width="70" height="50" rx="4" fill="#1e1b4b" stroke="#6366f1" stroke-width="2"/>
-                            <!-- IC pins -->
                             <line x1="112" y1="115" x2="112" y2="100" stroke="#6366f1" stroke-width="2"/>
                             <line x1="135" y1="115" x2="135" y2="100" stroke="#6366f1" stroke-width="2"/>
                             <line x1="158" y1="115" x2="158" y2="100" stroke="#6366f1" stroke-width="2"/>
                             <line x1="112" y1="165" x2="112" y2="180" stroke="#6366f1" stroke-width="2"/>
                             <line x1="135" y1="165" x2="135" y2="180" stroke="#6366f1" stroke-width="2"/>
                             <line x1="158" y1="165" x2="158" y2="180" stroke="#6366f1" stroke-width="2"/>
-                            <!-- IC label -->
                             <text x="135" y="145" text-anchor="middle" fill="#a5b4fc" font-size="10" font-family="monospace">MCU</text>
                         </svg>
-                        <!-- Corner mounting holes -->
                         <div class="absolute top-3 left-3 w-4 h-4 rounded-full border-2 border-indigo-400 bg-indigo-900"></div>
                         <div class="absolute top-3 right-3 w-4 h-4 rounded-full border-2 border-indigo-400 bg-indigo-900"></div>
                         <div class="absolute bottom-3 left-3 w-4 h-4 rounded-full border-2 border-indigo-400 bg-indigo-900"></div>
@@ -236,9 +194,6 @@ import MainLayout from "../../layouts/Main.astro";
     </section>
 
 
-    <!-- ═══════════════════════════════════════════
-         TEAM — gradient rings, hover lift, fun fact
-    ════════════════════════════════════════════ -->
     <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -251,34 +206,28 @@ import MainLayout from "../../layouts/Main.astro";
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-                <!-- Member 1 -->
                 <div class="bg-white rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all overflow-hidden group">
                     <div class="h-3 bg-linear-to-r from-blue-400 to-indigo-500"></div>
                     <div class="p-6 text-center">
-                        <!-- Avatar ring -->
                         <div class="w-24 h-24 rounded-full mx-auto mb-4 p-0.75 bg-linear-to-br from-blue-400 to-indigo-500">
                             <div class="w-full h-full rounded-full bg-indigo-100 flex items-center justify-center">
-                                <!-- Add photo here -->
                                 <span class="text-indigo-600 font-extrabold text-xl">P1</span>
                             </div>
                         </div>
                         <h3 class="font-bold text-lg text-gray-900">PERSON 1</h3>
                         <p class="text-sm text-indigo-600 font-medium mb-3">IMPORTANT POSITION 1</p>
                         <p class="text-sm text-gray-600 leading-relaxed mb-4">"Short bio goes here"</p>
-                        <!-- Fun-fact badge -->
                         <span class="inline-block bg-indigo-50 text-indigo-700 text-xs font-semibold px-3 py-1 rounded-full">
                             ⚡ Random fun fact
                         </span>
                     </div>
                 </div>
 
-                <!-- Member 2 -->
                 <div class="bg-white rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all overflow-hidden group">
                     <div class="h-3 bg-linear-to-r from-purple-400 to-pink-500"></div>
                     <div class="p-6 text-center">
                         <div class="w-24 h-24 rounded-full mx-auto mb-4 p-0.75 bg-linear-to-br from-purple-400 to-pink-500">
                             <div class="w-full h-full rounded-full bg-purple-100 flex items-center justify-center">
-                                <!-- You get the drill, image here -->
                                 <span class="text-purple-600 font-extrabold text-xl">P2</span>
                             </div>
                         </div>
@@ -291,7 +240,6 @@ import MainLayout from "../../layouts/Main.astro";
                     </div>
                 </div>
 
-                <!-- Member 3 -->
                 <div class="bg-white rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all overflow-hidden group">
                     <div class="h-3 bg-linear-to-r from-green-400 to-cyan-500"></div>
                     <div class="p-6 text-center">
@@ -311,17 +259,14 @@ import MainLayout from "../../layouts/Main.astro";
 
             </div>
 
-            <!-- Add more members note -->
             <p class="text-center text-sm text-gray-400 mt-6 italic">
-                Add more team members if you want, or remove this note if not. We can also add social media links or something if you think that would be good.
+                Add more team members if you want, or remove this note if not.
             </p>
         </div>
     </section>
 
 
     <section class="relative bg-linear-to-br from-indigo-600 via-purple-600 to-indigo-800 text-white py-20 overflow-hidden">
-
-        <!-- Subtle glow shapes -->
         <div class="absolute -top-20 -right-20 w-80 h-80 bg-purple-400 rounded-full opacity-20 blur-3xl pointer-events-none"></div>
         <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-indigo-400 rounded-full opacity-20 blur-3xl pointer-events-none"></div>
 

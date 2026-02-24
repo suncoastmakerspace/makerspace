@@ -1,4 +1,5 @@
 ---
+import Link from './Link.astro';
 ---
 
 <nav class="sticky top-0 z-50 bg-indigo-700/90 backdrop-blur shadow-lg">
@@ -6,7 +7,7 @@
         <div class="flex justify-between items-center h-16">
 
             <div class="flex items-center">
-                <a href="/" class="flex items-center space-x-2 text-white font-bold text-xl hover:text-indigo-100 transition-colors">
+                <Link href="/" class="flex items-center space-x-2 text-white font-bold text-xl hover:text-indigo-100 transition-colors">
                     
                     <!-- TEMP LOGO -->
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -19,19 +20,19 @@
 
             <div class="hidden md:flex space-x-8">
 
-                <a href="/" class="text-white hover:text-indigo-100 font-medium transition-colors">
+                <Link href="/" class="text-white hover:text-indigo-100 font-medium transition-colors">
                     Home
                 </a>
 
-                <a href="/projects" class="text-white hover:text-indigo-100 font-medium transition-colors">
+                <Link href="/projects" class="text-white hover:text-indigo-100 font-medium transition-colors">
                     Projects
                 </a>
 
-                <a href="/about" class="text-white hover:text-indigo-100 font-medium transition-colors">
+                <Link href="/about" class="text-white hover:text-indigo-100 font-medium transition-colors">
                     About
                 </a>
 
-                <a href="/contact" class="text-white hover:text-indigo-100 font-medium transition-colors">
+                <Link href="/contact" class="text-white hover:text-indigo-100 font-medium transition-colors">
                     Contact
                 </a>
 
@@ -53,16 +54,16 @@
 
     <div id="mobile-menu" class="hidden md:hidden bg-indigo-700">
         <div class="px-2 pt-2 pb-3 space-y-1">
-            <a href="/" class="block px-3 py-2 text-white hover:bg-indigo-600 rounded-md font-medium transition-colors">
+            <Link href="/" class="block px-3 py-2 text-white hover:bg-indigo-600 rounded-md font-medium transition-colors">
                 Home
             </a>
-            <a href="/projects" class="block px-3 py-2 text-white hover:bg-indigo-600 rounded-md font-medium transition-colors">
+            <Link href="/projects" class="block px-3 py-2 text-white hover:bg-indigo-600 rounded-md font-medium transition-colors">
                 Projects
             </a>
-            <a href="/about" class="block px-3 py-2 text-white hover:bg-indigo-600 rounded-md font-medium transition-colors">
+            <Link href="/about" class="block px-3 py-2 text-white hover:bg-indigo-600 rounded-md font-medium transition-colors">
                 About
             </a>
-            <a href="/contact" class="block px-3 py-2 text-white hover:bg-indigo-600 rounded-md font-medium transition-colors">
+            <Link href="/contact" class="block px-3 py-2 text-white hover:bg-indigo-600 rounded-md font-medium transition-colors">
                 Contact
             </a>
         </div>
