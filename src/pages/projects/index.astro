@@ -1,11 +1,26 @@
 ---
 import MainLayout from "../../layouts/Main.astro";
+import ProjectsGrid from "../../components/ProjectsGrid.svelte";
+import { projects } from "../../data/projects";
 ---
 
-<MainLayout title="Projects">
-    <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">stub</h2>
-        </div>
-    </section>
+<MainLayout title="Projects — Makerspace">
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-r from-indigo-700 to-indigo-900 py-16 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Our Projects</h1>
+      <p class="text-indigo-200 text-lg max-w-2xl mx-auto">
+        Everything we've built, documented for the community.
+      </p>
+    </div>
+  </section>
+
+  <!-- Grid -->
+  <section class="bg-gray-50 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ProjectsGrid {projects} client:load />
+    </div>
+  </section>
+
 </MainLayout>
